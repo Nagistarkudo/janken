@@ -34,21 +34,47 @@ result = CHOKI;
 return result;
 }
 
+<<<<<<< Updated upstream
+=======
+// //順番に出して行くマン
+// function actionAgainstrotation() {
+
+
+>>>>>>> Stashed changes
 /*
 対戦相手名前まとめ
 チョキ大好きマン： fighter::choki-lover
 表か裏かマン：fighter::odd-even
 帰ってきた表か裏かマン：fighter::on-third
+<<<<<<< Updated upstream
 */
 
 function action(oppornent) {
+=======
+順番に出して行くマン：fighter::rotation
+*/
+
+function action(oppornent){
+>>>>>>> Stashed changes
 console.log(oppornent);
 let result = GU;
 countup();
 if (oppornent == "fighter::choki-lover") {
 result = actionAgainstChokiDaisukiman();
+<<<<<<< Updated upstream
 } else {
+=======
+} 
+else if(oppornent =="fighter::rotation"){
+  result=actionAgainstrotation
+}
+else{
+>>>>>>> Stashed changes
 result = actionAgainstOmoteUra2();
 }
 return result;
 }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
